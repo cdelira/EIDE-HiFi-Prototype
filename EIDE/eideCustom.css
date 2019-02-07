@@ -3,3 +3,34 @@
   padding-bottom: 5px; !important 
 
 }
+
+.slick-prev
+{
+  background-color: #4e73df;
+  font-size: 12px;
+  border: 0px; 
+  border-radius: 8px;
+  color: white;
+
+}
+
+.slick-next
+{
+  background-color: #4e73df;
+  font-size: 12px;
+  border: 0px; 
+  border-radius: 8px;
+  color: white;
+
+}
+
+.centerPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.extraTopPadding {
+  padding-top: 5px; 
+}
