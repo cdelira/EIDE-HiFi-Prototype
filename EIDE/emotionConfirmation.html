@@ -161,8 +161,76 @@
 			<div class="col-sm-4">
 			</div> 
 			<div class="col-sm-4 text-center extraPadding">
-			  <button class="btn btn-sm btn-danger text-uppercase " >Ask?</button>
-			  <br>
+			  <button class="btn btn-sm btn-danger text-uppercase " data-toggle="modal" data-target="#ask" >Ask?</button>
+        <br>
+
+
+
+                          <!-- Modal - Ask  -->
+                          <div class="modal fade" id="ask" tabindex="-1" role="dialog" aria-labelledby="askLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    
+                                  <div class="modal-body">
+        
+                                      <h2 class="modal-title" id="askLabel">Ask a Question!</h2>
+        
+                                      <form>
+                                  
+        
+                                          <div class="form-group">
+                                              <label for="exampleFormControlInput1">Title</label>
+                                              <input type="subject" class="form-control" id="exampleFormControlInput1" placeholder="I have a question!">
+                                            </div>
+        
+                                            <div class="form-group">
+                                                <label for="exampleFormControlInput1">Email address (optional)</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                              </div>
+        
+                                          <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Submit Anonymously?</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                              <option>Yes</option>
+                                              <option>No</option>
+                                            </select>
+                                          </div>
+
+                                          <div class="form-group">
+                                              <label for="exampleFormControlSelect1">Who do you want to contact?</label>
+                                              <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Instructors</option>
+                                                <option>Teaching Assistant: Mary N.</option>
+                                                <option>Teaching Assistant: Carol M.</option>
+                                                <option>All Teaching Personnel</option>
+                                              </select>
+                                            </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Message</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                          </div>
+        
+                                          <button type="submit" class="btn btn-primary">Submit</button>
+        
+                                        </form>
+        
+        
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+        
+
+
+
+
+
+
+
 			</div>  
 		  </div> 
 		  
