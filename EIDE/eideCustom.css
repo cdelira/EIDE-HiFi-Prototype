@@ -36,7 +36,7 @@
 }
 
 .vertical-menu {
-  height:250px;
+  height:200px;
   overflow-y: auto;
 }
 
@@ -99,4 +99,29 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+.btn-sq-lg {
+  width: 300px !important;
+  height: 300px !important;
+  font-size: 40px; 
+  vertical-align: middle !important;
+  text-align: center;
+
+}
+
+.backgroundHighlighter{
+
+  background-color: #4e73df; 
+  border-radius: 25px;
+  color:#ffffff; 
+
+
+}
+
+.backgroundHighlighterRed{
+
+  background-color: #e74a3b; 
+  border-radius: 25px;
+  color:#ffffff; 
 }
