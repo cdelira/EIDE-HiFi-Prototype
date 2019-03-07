@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CREATE: Instructor Dashboard</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <!-- Custom styles for this template (EIDE)-->
+  <link href="eideCustom.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+ 
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <!-- Counter - Messages -->
+                <span class="badge badge-danger badge-counter">1</span>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://static1.squarespace.com/static/57d2d2eb5016e1b624ddfa52/t/5b75c66440ec9a87455831fa/1534445172095/HayPigs_Harlequin_Guinea_Pig_005.jpg" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                    <div class="small text-gray-500">Bacon Eggs · 58m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/smile.png" alt="">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Hello, I see that you are feeling stressed! I had the same exception. Let's talk</div>
+                    <div class="small text-gray-500">Anon 1212 · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://cdn4.iconfinder.com/data/icons/simplicity-vector-icon-set/512/smile.png" alt="">
+                    <div class="status-indicator bg-warning"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">HELP ME!</div>
+                    <div class="small text-gray-500">Anon 3224 · 2d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://www.veterinarypracticenews.com/wp-content/uploads/2018/03/Guinea-pig-and-salmonella.jpg" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Hello Abest Stoodunt. I see that you were having issues Tuesday. Want to come to my office hours?</div>
+                    <div class="small text-gray-500">Professor Guinea Squeaks · 2w</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Professor Wheek Weet</span>
+                <img class="img-profile rounded-circle" src="https://www.veterinarypracticenews.com/wp-content/uploads/2018/03/Guinea-pig-and-salmonella.jpg">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">
+                <h2> Creating questions for <span class="textBlueHighlight"> Lecture 1 </span><a href=""><i class="fas fa-edit"></i></a></h2> 
+            </div>
+          </div>
+              <div class="row">
+                <div class="col-sm-8 text-center backgroundForeground"> 
+                    <br>
+                    <a href="#" class="btn btn-sq-md btn-primary">
+
+                      <br>
+                      <i class="fas fa-poll"></i>
+                      <br>
+                      Add Poll
+                    </a>
+
+                    <a href="#" class="btn btn-sq-md btn-primary">
+
+                        <br>
+                        <i class="fas fa-signature"></i>
+                        <br>
+                        Add Free Response
+                      </a>
+
+                      <br>
+                      <br>
+
+                      <div class="upArrow"><i class="fas fa-arrow-up"></i> Move Up</div>
+
+
+
+                      <div class="card">
+                          <div class="card-header">
+                            <h4>1. What is your favorite color? <a href=""><i class="fas fa-edit"></i></a></h4>
+                          </div>
+                          <div class="card-body floatLeftPollOptions">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    A. Red <a href=""><i class="fas fa-edit"></i></a>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    B. Blue <a href=""><i class="fas fa-edit"></i></a>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    C. Green <a href=""><i class="fas fa-edit"></i></a>
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3" disabled>
+                                <label class="form-check-label" for="exampleRadios2">
+                                   <a href=""><i class="fas fa-plus-square"></i> Click to add option.</a> 
+                                </label>
+                            </div>
+                          
+                          
+                          </div>
+
+                          <div class="card-footer">
+                              <a href="#" class="btn btn-primary" data-html="true" data-toggle="popover" data-content="<ul class='vertical-menu-tiny'>
+                                  <li><a href='#'>Edit</a></li>
+                                  <li><a href='#'>Move Up</a></li>
+                                  <li><a href='#'>Move Down</a></li>
+                                  <li><a href='#'>Delete</a></li>
+                              </ul>"><i class="fas fa-cog"></i></a>
+                          </div>
+
+                        </div>
+
+                        <div class="downArrow"><i class="fas fa-arrow-down"></i> Move Down</div>
+
+
+                        <!-- Free Response -->
+
+                        <br>
+
+
+
+
+                        <div class="upArrow"><i class="fas fa-arrow-up"></i> Move Up</div>
+
+
+
+                        <div class="card">
+                            <div class="card-header">
+                              <h4>2. Tell me about yourself! <a href=""><i class="fas fa-edit"></i></a></h4>
+                            </div>
+                            <div class="card-body floatLeftPollOptions">
+  
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Be Honest!">
+
+                            
+                            
+                            </div>
+  
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary" data-html="true" data-toggle="popover" data-content="<ul class='vertical-menu-tiny'>
+                                    <li><a href='#'>Edit</a></li>
+                                    <li><a href='#'>Move Up</a></li>
+                                    <li><a href='#'>Move Down</a></li>
+                                    <li><a href='#'>Delete</a></li>
+                                </ul>"><i class="fas fa-cog"></i></a>
+                            </div>
+  
+                          </div>
+  
+                          <div class="downArrow"><i class="fas fa-arrow-down"></i> Move Down</div>
+
+
+                          <!-- Quiz -->
+                          <br>
+
+                          <div class="upArrow"><i class="fas fa-arrow-up"></i> Move Up</div>
+
+
+
+                          <div class="card">
+                              <div class="card-header">
+                                <h4>3. What is 2+2 ? <a href=""><i class="fas fa-edit"></i></a></h4>
+                              </div>
+                              <div class="card-body floatLeftPollOptions">
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        A. 2 <a href=""><i class="fas fa-edit"></i></a>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        B. 3 <a href=""><i class="fas fa-edit"></i></a>
+                                    </label>
+                                </div>
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                       <b> C. 4 </b><a href=""><i class="fas fa-edit"></i></a> 
+                                    </label>
+                                </div>
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3" disabled>
+                                    <label class="form-check-label" for="exampleRadios2">
+                                       <a href=""><i class="fas fa-plus-square"></i> Click to add option.</a> 
+                                    </label>
+                                </div>                              
+                              </div>
+    
+                              <div class="card-footer">
+                                  <a href="#" class="btn btn-primary" data-html="true" data-toggle="popover" data-content="<ul class='vertical-menu-tiny'>
+                                      <li><a href='#'>Edit</a></li>
+                                      <li><a href='#'>Move Up</a></li>
+                                      <li><a href='#'>Move Down</a></li>
+                                      <li><a href='#'>Delete</a></li>
+                                  </ul>"><i class="fas fa-cog"></i></a>
+                              </div>
+                            </div>
+                </div>
+
+                <div class="col-sm-4 text-center "> 
+                    <div id="moreSettings" class="collapse">
+                        <div class="card border-light mb-3" style="max-width: 30rem;">
+                            <div class="card-body text-secondary">
+                              <h5 class="card-title">More Settings</h5>
+                              <p class="card-text">
+
+                                  <h6>IP Address Attendance:</h6>
+
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ipAdd" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Enable
+                                    </label>
+                                </div>
+    
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ipAdd" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                       Disable
+                                    </label>
+                                </div>
+
+                                  <h6>Show Classroom Climate:</h6>
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="classClim" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                          Enable
+                                      </label>
+                                  </div>
+      
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="classClim" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                         Disable
+                                      </label>
+                                  </div>
+                                  <h6>Censorship of Profanity:</h6>
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="censorProf" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                          Enable
+                                      </label>
+                                  </div>
+      
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="censorProf" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                         Disable
+                                      </label>
+                                  </div>
+
+                                  <h6>Content Monitoring:</h6>
+
+
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="contentMon" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                          Enable
+                                      </label>
+                                  </div>
+      
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="contentMon" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                         Disable
+                                      </label>
+                                  </div>
+                              </p>
+                            </div>
+                          </div>
+                      </div>
+                    <a href="#" class="btn btn-primary" data-toggle="collapse" data-target="#moreSettings" >More Settings</a>
+                    <a href="#" class="btn btn-success" data-toggle="modal" data-target="#pubishEvent">Publish</a>  
+                </div>
+              </div> 
+		    </div>
+</div>
+
+
+
+		                    <!-- Modal - publishEvent  -->
+                        <div class="modal fade" id="pubishEvent" tabindex="-1" role="dialog" aria-labelledby="pubishEventLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content text-center">
+                                  
+                                <div class="modal-body">
+      
+                                    <h3 class="modal-title backgroundHighlighter " id="pubishEventLabel"> Publish Event</h3>
+
+                                    <br>
+
+                                    <h6> Do you want to save and publish <i>Lecture 1</i>?</h6>
+      
+                                    <form>
+                                          <div class="form-group ">
+                                            <br>
+                                                <button type="submit" class="btn btn-primary"> Publish </button>
+                                                <button type="submit" class="btn btn-default"> Cancel </button>
+                                            </div>
+      
+                                      </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy;  EmpatheticIDE 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+
+  <script>
+
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover(); 
+      });
+
+
+  </script>
+
+</body>
+
+</html>

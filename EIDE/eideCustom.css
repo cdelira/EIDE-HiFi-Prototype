@@ -101,6 +101,15 @@ a:active {
   text-decoration: none;
 }
 
+.btn-sq-md {
+  width: 100px !important;
+  height: 100px !important;
+  font-size: 13px; 
+  vertical-align: middle !important;
+  text-align: center;
+
+}
+
 .btn-sq-lg {
   width: 300px !important;
   height: 300px !important;
@@ -124,4 +133,86 @@ a:active {
   background-color: #e74a3b; 
   border-radius: 25px;
   color:#ffffff; 
+}
+
+.datePicker{
+
+  border: 1px solid #c7c6c6;
+  font-size: 16px;
+  border-radius: 5px;
+
+}
+
+.backgroundHighlighterGreen{
+
+  background-color: #30b250; 
+  border-radius: 25px;
+  color:#ffffff; 
+  width: 300px;
+
+}
+
+
+.backgroundForeground{
+
+  background-color: #f2f2f2; 
+  border-radius: 15px;
+  height: 1200px;
+  
+}
+
+.floatLeftPollOptions{
+  text-align: left;
+  margin-left: 60px;
+  font-size: 20px; 
+}
+
+.upArrow{
+
+  text-align: right;
+  font-size: 11px; 
+
+
+
+}
+
+.downArrow{
+
+  text-align: right;
+  font-size: 11px; 
+
+
+
+}
+
+
+.vertical-menu-tiny {
+  height:155px;
+  overflow-y: auto;
+}
+
+.vertical-menu-tiny a {
+  background-color: #ffffff; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  font-size: 10px;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu-tiny a:hover {
+  color: white;
+  background-color: #4e73df; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu-tiny a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+.textBlueHighlight
+{
+
+  color: #4e73df; 
+
 }
